@@ -14,7 +14,7 @@ let getMovie = () =>{
     //if input field is empty
 
     if(movieName.length <= ''){
-        result.innerHTML = `<h3 class="msg"> Please enter a movie name</h3>`;
+        result.innerHTML = `<h3 class="msg" id = "Genre"> Please enter a movie name</h3>`;
     }
     // if input is not empty
     else{
