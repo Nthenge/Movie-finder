@@ -9,7 +9,7 @@ let result = document.getElementById('result')
 //function to fetch data from api
 let getMovie = () =>{
     let movieName = movieNameRef.value;
-    let url = `http://www.omdbapi.com/?apikey=${APIKey}&t=${movieName})`
+    let url = `https://www.omdbapi.com/?apikey=${APIKey}&t=${movieName})`
 
     //if input field is empty
 
@@ -55,6 +55,7 @@ let getMovie = () =>{
         })
         //if error occurs
         .catch(() => {
+            console.error('Error:', error);
             result.innerHTML = '<h3 class ="msg">Something went wrong, please try again later.</h3>'
         })
     }
