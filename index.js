@@ -25,23 +25,25 @@ let getMovie = () =>{
                     <div class= "info">
                         <img src="${data.Poster}" class = "poster">
                         <div>
-                            <h2>${data.Title}</h2>
+                            <h2 id = "Genre">${data.Title}</h2>
                             <div class= "rating">
                                 <img src = "star.png">
-                                <h4>${data.imdbRating} </h4>
+                                <span id = "Genre">${data.imdbRating} | </span>
+                                <span id = "Genre">${data.Type} | <span/>
+                                <span >By ${data.Writer}</span>
                             </div>
                             <div class = "details">
-                                <span>${data.Rated}</span>
-                                <span>${data.Year}</span>
-                                <span>${data.Runtime}</span>
+                                <span> | ${data.Rated} | </span>
+                                <span id = "Genre">${data.Year} | </span>
+                                <span>${data.Runtime} | </span>
                             </div>
                                 <div class = "gerne">
-                                <div>${data.Genre.split(",").join("</div><div>")}</div>
+                                <div id = "Genre">${data.Genre.split(",").join("</div><div>")}</div>
                             </div>
                         </div>
                     </div>
                     <h3>Plot:</h3>
-                    <p>${data.plot}</p>
+                    <p>${data.Plot}</p>
                     <h3>Cast:</h3>
                     <p>${data.Actors}</p>
                 `

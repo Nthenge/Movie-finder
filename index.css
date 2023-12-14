@@ -114,6 +114,9 @@ p{
 .msg{
     text-align: center;
 }
+#Genre{
+    color: #ffb92a;
+}
 @media  screen and (max-width: 600px) {
     .container{
         font-size: 14px;
